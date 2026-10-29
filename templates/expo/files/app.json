@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "{{projectName}}",
+    "slug": "{{projectName}}",
+    "scheme": "{{identifier}}",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.example.{{identifier}}"
+    },
+    "android": {
+      "package": "com.example.{{identifier}}"
+    },
+    "plugins": ["expo-router"]
+  }
+}

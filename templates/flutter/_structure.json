@@ -1,0 +1,19 @@
+{
+  "framework": "Flutter",
+  "projectType": "mobile",
+  "languages": ["Dart"],
+  "ecosystem": "dart",
+  "description": "Flutter app for iOS and Android with strict analysis, tests, and CI (needs the Flutter SDK)",
+  "rules": {
+    "requires": [
+      { "command": "flutter", "hint": "install the Flutter SDK: https://docs.flutter.dev/get-started/install" }
+    ]
+  },
+  "bootstrap": ["flutter create --project-name {{dartName}} --org com.example --platforms=android,ios ."],
+  "postInstall": ["flutter pub add dio", "flutter pub get"],
+  "nextSteps": [
+    "cd {{projectName}}",
+    "flutter run",
+    "# point the app at your API: flutter run --dart-define=API_URL=http://10.0.2.2:3000"
+  ]
+}

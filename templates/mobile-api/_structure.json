@@ -1,0 +1,14 @@
+{
+  "framework": "NestJS mobile API",
+  "projectType": "backend",
+  "description": "API for mobile apps: JWT access and refresh tokens, device push tokens, Prisma and PostgreSQL",
+  "extends": "nest-prisma",
+  "directories": ["src/auth", "src/devices"],
+  "nextSteps": [
+    "cd {{projectName}}",
+    "cp .env.example .env   # then replace the JWT secrets: openssl rand -base64 48",
+    "docker compose up -d postgres",
+    "{{pm}} run prisma:migrate",
+    "{{pm}} run start:dev"
+  ]
+}

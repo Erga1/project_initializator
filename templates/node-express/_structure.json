@@ -1,0 +1,9 @@
+{
+  "framework": "Express",
+  "projectType": "backend",
+  "languages": ["JavaScript", "TypeScript"],
+  "description": "Express API with security middleware, validation, tests, and env config",
+  "extends": "_shared",
+  "directories": ["src/config", "src/controllers", "src/models", "src/routes"],
+  "nextSteps": ["cd {{projectName}}", "cp .env.example .env", "{{pm}} run dev"]
+}

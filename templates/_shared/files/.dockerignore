@@ -1,0 +1,12 @@
+node_modules
+.git
+.github
+.husky
+coverage
+dist
+build
+.env
+.env.*
+!.env.example
+*.log
+Dockerfile

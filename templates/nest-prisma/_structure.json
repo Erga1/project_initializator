@@ -1,0 +1,26 @@
+{
+  "framework": "NestJS + Prisma",
+  "projectType": "backend",
+  "languages": [
+    "TypeScript"
+  ],
+  "description": "NestJS, Prisma, and PostgreSQL API with validation, throttling, tests, and Docker",
+  "extends": "_shared",
+  "directories": [
+    "prisma",
+    "src/config",
+    "src/health",
+    "src/prisma",
+    "test"
+  ],
+  "postInstall": [
+    "{{pm}} run prisma:generate"
+  ],
+  "nextSteps": [
+    "cd {{projectName}}",
+    "cp .env.example .env",
+    "docker compose up -d postgres",
+    "{{pm}} run prisma:migrate",
+    "{{pm}} run start:dev"
+  ]
+}

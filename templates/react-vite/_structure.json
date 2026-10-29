@@ -1,0 +1,9 @@
+{
+  "framework": "React + Vite",
+  "projectType": "frontend",
+  "languages": ["TypeScript", "JavaScript"],
+  "description": "React single-page app on Vite with production Nginx Docker image",
+  "extends": "_shared",
+  "directories": ["src"],
+  "nextSteps": ["cd {{projectName}}", "{{pm}} run dev"]
+}

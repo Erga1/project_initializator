@@ -1,0 +1,15 @@
+{
+  "framework": "React Native + Expo",
+  "projectType": "mobile",
+  "languages": ["TypeScript", "JavaScript"],
+  "description": "Expo Router app for iOS, Android, and web with tests, linting, and CI",
+  "extends": "_shared",
+  "exclude": ["Dockerfile", ".dockerignore"],
+  "directories": ["src/app", "src/components"],
+  "nextSteps": [
+    "cd {{projectName}}",
+    "cp .env.example .env",
+    "{{pm}} run start",
+    "# then press i (iOS simulator), a (Android emulator), or scan the QR code with Expo Go"
+  ]
+}

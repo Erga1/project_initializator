@@ -1,0 +1,8 @@
+{
+  "framework": "shared",
+  "description": "Shared formatting, hooks, CI, dependency-update, and Docker baseline",
+  "directories": [],
+  "postInstall": ["{{pm}} install"],
+  "audit": "{{pm}} audit",
+  "nextSteps": ["cd {{projectName}}", "{{pm}} run dev"]
+}

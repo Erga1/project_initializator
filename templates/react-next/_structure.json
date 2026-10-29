@@ -1,0 +1,9 @@
+{
+  "framework": "React + Next.js",
+  "projectType": "frontend",
+  "languages": ["TypeScript", "JavaScript"],
+  "description": "Next.js App Router with server rendering, security headers, and standalone Docker image",
+  "extends": "_shared",
+  "directories": ["src/app", "src/components", "public"],
+  "nextSteps": ["cd {{projectName}}", "cp .env.example .env.local", "{{pm}} run dev"]
+}
